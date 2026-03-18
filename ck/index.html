@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flappy Bird</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="game-shell">
+		<section class="game-card" aria-label="Flappy Bird game">
+			<header class="hud">
+				<div>
+					<p class="eyebrow">Arcade Canvas</p>
+					<h1>Flappy Bird</h1>
+				</div>
+				<div class="scoreboard">
+					<div class="score-pill">
+						<span>Score</span>
+						<strong id="score">0</strong>
+					</div>
+					<div class="score-pill">
+						<span>Best</span>
+						<strong id="best-score">0</strong>
+					</div>
+				</div>
+			</header>
+
+			<div class="canvas-frame">
+				<canvas id="gameCanvas" width="420" height="640" aria-label="Flappy Bird game area"></canvas>
+
+				<div id="overlay" class="overlay">
+					<p id="status-tag" class="status-tag">Ready</p>
+					<h2 id="overlay-title">Tap to Fly</h2>
+					<p id="overlay-text">Press Space, Arrow Up, or click the canvas to start and keep the bird in the air.</p>
+					<button id="action-button" type="button">Start Game</button>
+				</div>
+			</div>
+
+			<footer class="controls">
+				<p>Controls: <span>Space</span> <span>Arrow Up</span> <span>Mouse Click</span></p>
+				<p>Pass through pipes to increase your score. Hitting a pipe or the ground ends the run.</p>
+			</footer>
+		</section>
+	</main>
+
+	<script src="index.js"></script>
+</body>
+</html>
